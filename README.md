@@ -5,8 +5,7 @@ jdtwMean is a Java implementation of two algorithms for time series averaging in
 * DTW Barycenter Averaging (DBA)
 * Stochastic Subgradient Method (SSG)
 
-The DBA algorithm by Petitjean et al. corresponds to the Majorize-Minimize (MM) algorithm as discussed in [1]. The SSG method has been suggested in [1].
-
+Both algorithms are described and discussed in [1]. 
 
 ### Requirements:
 * Java 8 and higher
@@ -25,14 +24,12 @@ The DBA algorithm by Petitjean et al. corresponds to the Majorize-Minimize (MM) 
 
 ### Quick Start 
 
-This implementation assumes the file structure and data format of the UCR time series repository. The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
+This implementation assumes the file structure and data format of the [UCR time series repository](http://www.cs.ucr.edu/~eamonn/time_series_data/). The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
 
 * `dir/data/data_TRAIN`
 * `dir/data/data_TEST`
 
-For averaging time series, this implementation merges the training and test set to a single set and then computes a sample mean.  
-
-There are two ways two apply a mean algorithm: (1) via command line and (2) via class `app/DTWMean.java`.  
+For averaging time series, this implementation merges the training and test set to a single set and then computes a sample mean. There are two ways two apply a mean algorithm: (1) via command line and (2) via class `app/DTWMean.java`.  
 
 1. Command line: specify options and call
 
