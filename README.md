@@ -25,61 +25,48 @@ The DBA algorithm by Petitjean et al. corresponds to the Majorize-Minimize (MM) 
 
 ### Quick Start 
 
-This implementation assumes the file structure and data format of the UCR time
-series repository. The UCR file structure for a dataset with name <data>
-residing in directors <dir> is as follows: 
+This implementation assumes the file structure and data format of the UCR time series repository. The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
 
-dir/data/data_TRAIN
-dir/data/data_TEST
+* `dir/data/data_TRAIN`
+* `dir/data/data_TEST`
 
-For averaging time series, this implementation merges the training and test set
-to a single set and then computes a sample mean.  
+For averaging time series, this implementation merges the training and test set to a single set and then computes a sample mean.  
 
-There are two ways two apply a mean algorithm: (1) via command line and (2) via
-class app/App.java.  
+There are two ways two apply a mean algorithm: (1) via command line and (2) via class `app/DTWMean.java`.  
 
 1. Command line: specify options and call
 
-    java -jar dtwmean.jar <dir> <data> <options>
+    `java -jar jdtwMean.jar <dir> <data> <options>`
     
-The <dir> and <data> arguments are mandatory. Without setting further options,
-the SSG algorithm with default parameter setting is called. See section OPTIONS
-for a detailed description of how to set options.
+The `<dir>` and `<data>` arguments are mandatory. Without setting further options, the SSG algorithm with default parameter setting is called. See section OPTIONS for a detailed description of how to set options.
 
-2. Directly set arguments in class app/DTWMean, then compile and run class
-DTWMean. For setting the arguments, class DTWMean provides three attributes
+2. Directly set arguments in class `app/DTWMean`, then compile and run class `DTWMean`. For setting the arguments, class `DTWMean` provides three attributes
 
-	String dir
-	String data
-	String opts
+* `String dir`
+* `String data`
+* `String opts`
 
-The three attributes are set in the same way as the corresponding arguments in
-the command line. Options are set as a single string. For further details on how
-to set options, we refer to OPTIONS
+The three attributes are set in the same way as the corresponding arguments in the command line. Options are set as a single string. For further details on how to set options, we refer to OPTIONS
 
 
-### DATASETS ###################################################################
+### DATASETS
 
-The folder *./data/ contains the following datasets of the [UCR time series
-datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) provided by E. Keogh:
+The folder `*./data/` contains the following datasets of the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) provided by E. Keogh:
 
 * CBF
 * Coffee
 * Beef
 
-Each dataset consists of a directory containing a training and a test file
-dataset. 
+Each dataset consists of a directory containing a training and a test file dataset. 
 
 
-### OPTIONS ####################################################################
+### OPTIONS 
 
-Setting an option overwrites the corresponding default values. Therefore, only
-options need to be set that differ from the default. The following options are
-given:
+Setting an option overwrites the corresponding default values. Therefore, only options need to be set that differ from the default. The following options are given:
 
-*** Options:
+**Options:**
 
--A  <string> : type of mean algorithm (default: SSG)
+`-A  <string> : type of mean algorithm (default: SSG)
 	           DBA -- DTW Barycenter Averaging
 	           SSG -- Stochastic Subgradient Method
 -T  <int>	 : maximum number of epochs (default: 50)
@@ -89,10 +76,10 @@ given:
 -o <int>	 : output mode (default: 2)
                0 -- quiet mode, prints no progress information
                1 -- prints a dot after every epoch
-               2 -- reports progress info after every epoch
+               2 -- reports progress info after every epoch`
 
 
-### Examples ###################################################################
+### Examples 
 
 In the following examples <dir> refers to the directory containing the UCR
 dataset. 
