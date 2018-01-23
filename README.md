@@ -68,8 +68,8 @@ Setting an option overwrites the corresponding default values. Therefore, only o
 
 ```
 -A  <string> : type of mean algorithm (default: SSG)
-	           DBA -- DTW Barycenter Averaging
-	           SSG -- Stochastic Subgradient Method
+	       DBA -- DTW Barycenter Averaging
+	       SSG -- Stochastic Subgradient Method
 -T  <int>    : maximum number of epochs (default: 50)
 -t  <int>    : maximum number of epochs without improvement (default: 5)
 -l0 <double> : initial learning rate (default: 0.1)
@@ -83,46 +83,42 @@ Setting an option overwrites the corresponding default values. Therefore, only o
 
 ### Examples 
 
-In the following examples <dir> refers to the directory containing the UCR
-dataset. 
+In the following examples `<dir>` refers to the directory containing the UCR dataset. 
 
-1. java -jar dtwmean.jar <dir> Coffee 
+1. `java -jar dtwmean.jar <dir> Coffee` 
 
-Applies the stochastic subgradient method with default parameter setting to the
-Coffee dataset. The parameters are:
+Applies the stochastic subgradient method with default parameter setting to the Coffee dataset. The parameters are:
 
+```
 	-T  50		terminates latest after 50 epochs
 	-t   5		prematurely terminates after 5 epochs without improvement
 	-l0  0.1	initial learning rate	
 	-l1  0.001	final learning rate
 	-o   2		reports progress info after every epoch
+```
 
-2. java -jar dtwmean.jar <dir> Coffee -A DBA -o 0
+2. `java -jar dtwmean.jar <dir> Coffee -A DBA -o 0`
 
-Applies the DBA algorithm to the Coffee dataset without providing progress
-information after every epoch. The parameters are:
+Applies the DBA algorithm to the Coffee dataset without providing progress information after every epoch. The parameters are:
 
+```
 	-T  50		terminates latest after 50 epochs
 	-t   5		prematurely terminates after 5 epochs without improvement
 	-o   0		quite mode
+```
+
+3. `java -jar dtwmean.jar <dir> Coffee -A SSG -T 100 -t 30`
+
+Applies the stochastic subgradient method to the Coffee dataset. The algorithm prematurely terminates after 30 epochs without improvement or latest after 100 epochs. 
 
 
-3. java -jar dtwmean.jar <dir> Coffee -A SSG -T 100 -t 30
-
-Applies the stochastic subgradient method to the Coffee dataset. The algorithm
-prematurely terminates after 30 epochs without improvement or latest after 100
-epochs. 
-
-
-### References #################################################################
+### References 
 
 If you find this library helpful, please cite it as
 
-David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient
-Methods for the Sample Mean Problem in Dynamic Time Warping Spaces. 
+David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient Methods for the Sample Mean Problem in Dynamic Time Warping Spaces, Pattern Recognition, 74:340-358, 2018. 
 
-If you use any of the UCR time series datasets provided with this release,
-please consult the website
+If you use any of the UCR time series datasets provided with this release, please consult the website
 
 http://www.cs.ucr.edu/~eamonn/time_series_data/
 
