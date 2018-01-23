@@ -66,17 +66,19 @@ Setting an option overwrites the corresponding default values. Therefore, only o
 
 **Options:**
 
-```-A  <string> : type of mean algorithm (default: SSG)
+```
+-A  <string> : type of mean algorithm (default: SSG)
 	           DBA -- DTW Barycenter Averaging
 	           SSG -- Stochastic Subgradient Method
--T  <int>	 : maximum number of epochs (default: 50)
--t  <int>	 : maximum number of epochs without improvement (default: 5)
+-T  <int>    : maximum number of epochs (default: 50)
+-t  <int>    : maximum number of epochs without improvement (default: 5)
 -l0 <double> : initial learning rate (default: 0.1)
 -l1 <double> : final learning rate (default: 0.001)
--o <int>	 : output mode (default: 2)
+-o <int>     : output mode (default: 2)
                0 -- quiet mode, prints no progress information
                1 -- prints a dot after every epoch
-               2 -- reports progress info after every epoch```
+               2 -- reports progress info after every epoch	 
+```
 
 
 ### Examples 
