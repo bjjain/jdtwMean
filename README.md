@@ -15,7 +15,7 @@ The DBA algorithm by Petitjean et al. corresponds to the Majorize-Minimize (MM) 
 
 ### Table of Contents 
 
-* Quick Start
+* Quick Start#1
 * Datasets
 * Options
 * Examples
@@ -60,7 +60,7 @@ The folder `*./data/` contains the following datasets of the [UCR time series da
 Each dataset consists of a directory containing a training and a test file dataset. 
 
 
-### OPTIONS 
+### OPTIONS#1
 
 Setting an option overwrites the corresponding default values. Therefore, only options need to be set that differ from the default. The following options are given:
 
@@ -116,7 +116,7 @@ Applies the stochastic subgradient method to the Coffee dataset. The algorithm p
 
 If you find this library helpful, please cite it as
 
-David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient Methods for the Sample Mean Problem in Dynamic Time Warping Spaces, Pattern Recognition, 74:340-358, 2018. 
+[1] David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient Methods for the Sample Mean Problem in Dynamic Time Warping Spaces, Pattern Recognition, 74:340-358, 2018. ([arXiv preprint](https://arxiv.org/abs/1701.06393))
 
 If you use any of the UCR time series datasets provided with this release, please consult the website
 
@@ -125,7 +125,7 @@ http://www.cs.ucr.edu/~eamonn/time_series_data/
 and agree to the terms of use.
 
 
-### Contact ####################################################################
+### Contact 
 
 For any questions and comments, please email brijnesh.jain(at)gmail.com
 
