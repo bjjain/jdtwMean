@@ -15,7 +15,7 @@ The DBA algorithm by Petitjean et al. corresponds to the Majorize-Minimize (MM) 
 
 ### Table of Contents 
 
-* Quick Start#1
+* [Quick Start]
 * Datasets
 * Options
 * Examples
