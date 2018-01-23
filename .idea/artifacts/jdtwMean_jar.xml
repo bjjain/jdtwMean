@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="jdtwMean:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/jdtwMean_jar</output-path>
+    <root id="archive" name="jdtwMean.jar">
+      <element id="module-output" name="jdtwMean" />
+    </root>
+  </artifact>
+</component>
