@@ -5,7 +5,8 @@ averaging in dynamic time warping spaces:
 * DTW Barycenter Averaging (DBA)
 * Stochastic Subgradient Method (SSG)
 
-Note that the DBA algorithm is equivalent to the Majorize-Minimize (MM) algorithm.
+Note that the DBA algorithm is equivalent to the Majorize-Minimize (MM) algorithm
+discussed in [1].
 
 
 *** Requirements:
@@ -129,7 +130,7 @@ epochs.
 
 If you find this library helpful, please cite it as
 
-David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient
+[1] David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient
 Methods for the Sample Mean Problem in Dynamic Time Warping Spaces. 
 
 If you use any of the UCR time series datasets provided with this release,
