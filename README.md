@@ -5,7 +5,7 @@ jdtwMean is a Java implementation of two algorithms for time series averaging in
 * DTW Barycenter Averaging (DBA)
 * Stochastic Subgradient Method (SSG)
 
-Both algorithms are described and discussed in [1]. 
+Both algorithms are described and discussed in [1](#ref1). 
 
 ### Requirements:
 * Java 8 and higher
@@ -46,7 +46,7 @@ The three attributes are set in the same way as the corresponding arguments in t
 
 ### <a name='data'>DATASETS</a>
 
-The folder `*./data/` contains the following datasets of the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) provided by E. Keogh:
+The folder `*./data/` contains the following datasets of the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) [2]:
 
 * CBF
 * Coffee
@@ -111,6 +111,7 @@ Applies the stochastic subgradient method to the Coffee dataset. The algorithm p
 
 If you find this library helpful, please cite it as
 
+<a name='ref1'></a>
 [1] David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient Methods for the Sample Mean Problem in Dynamic Time Warping Spaces. *Pattern Recognition*, 74:340-358, 2018. ([arXiv preprint](https://arxiv.org/abs/1701.06393))
 
 [2] Yanping Chen, Eamonn Keogh, Bing Hu, Nurjahan Begum, Anthony Bagnall, Abdullah Mueen and Gustavo Batista. The UCR Time Series Classification Archive, 2015. URL: www.cs.ucr.edu/~eamonn/time_series_data/.
