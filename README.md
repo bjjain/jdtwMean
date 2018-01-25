@@ -14,15 +14,14 @@ Both algorithms are described and discussed in [1].
 
 ### Table of Contents 
 
-* Quick Start
+* [Quick Start](#start)
 * Datasets
 * Options
 * Examples
 * Reference
 * Contact
 
-
-### Quick Start 
+### <a name='start'>Quick Start</a> 
 
 This implementation assumes the file structure and data format of the [UCR time series repository](http://www.cs.ucr.edu/~eamonn/time_series_data/). The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
 
