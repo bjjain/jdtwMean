@@ -5,7 +5,7 @@ jdtwMean is a Java implementation of two algorithms for time series averaging in
 * DTW Barycenter Averaging (DBA)
 * Stochastic Subgradient Method (SSG)
 
-Both algorithms are described and discussed in [1](#ref1). 
+Both algorithms are described and discussed in [[1]](#ref1). 
 
 ### Requirements:
 * Java 8 and higher
