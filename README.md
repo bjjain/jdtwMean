@@ -22,7 +22,7 @@ Both algorithms are described and discussed in [1].
 
 ### <a name='start'>Quick Start</a> 
 
-This implementation assumes the file structure and data format of the [UCR time series repository](http://www.cs.ucr.edu/~eamonn/time_series_data/). The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
+This implementation assumes the file structure and data format of the [UCR time series repository](http://www.cs.ucr.edu/~eamonn/time_series_data/) [2]. The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
 
 * `dir/data/data_TRAIN`
 * `dir/data/data_TEST`
@@ -33,7 +33,7 @@ For averaging time series, this implementation merges the training and test set 
 
     `java -jar jdtwMean.jar <dir> <data> <options>`
     
-The `<dir>` and `<data>` arguments are mandatory. Without setting further options, the SSG algorithm with default parameter setting is called. See section OPTIONS for a detailed description of how to set options.
+The `<dir>` and `<data>` arguments are mandatory. Without setting further options, the SSG algorithm with default parameter setting is called. See section [OPTIONS](#opts) for a detailed description of how to set options.
 
 2. Directly set arguments in class `app/DTWMean`, then compile and run class `DTWMean`. For setting the arguments, class `DTWMean` provides three attributes
 
@@ -41,7 +41,7 @@ The `<dir>` and `<data>` arguments are mandatory. Without setting further option
 * `String data`
 * `String opts`
 
-The three attributes are set in the same way as the corresponding arguments in the command line. Options are set as a single string. For further details on how to set options, we refer to OPTIONS
+The three attributes are set in the same way as the corresponding arguments in the command line. Options are set as a single string. For further details on how to set options, we refer to [OPTIONS](#opts).
 
 
 ### <a name='data'>DATASETS</a>
@@ -111,10 +111,6 @@ Applies the stochastic subgradient method to the Coffee dataset. The algorithm p
 
 If you find this library helpful, please cite it as
 
-[1] David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient Methods for the Sample Mean Problem in Dynamic Time Warping Spaces, Pattern Recognition, 74:340-358, 2018. ([arXiv preprint](https://arxiv.org/abs/1701.06393))
+[1] David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient Methods for the Sample Mean Problem in Dynamic Time Warping Spaces. *Pattern Recognition*, 74:340-358, 2018. ([arXiv preprint](https://arxiv.org/abs/1701.06393))
 
-If you use any of the UCR time series datasets provided with this release, please consult the website
-
-http://www.cs.ucr.edu/~eamonn/time_series_data/
-
-and agree to the terms of use.
+[2] Yanping Chen, Eamonn Keogh, Bing Hu, Nurjahan Begum, Anthony Bagnall, Abdullah Mueen and Gustavo Batista. The UCR Time Series Classification Archive, 2015. URL: www.cs.ucr.edu/~eamonn/time_series_data/.
