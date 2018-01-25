@@ -1,6 +1,6 @@
 # jdtwMean
 
-jdtwMean is a Java implementation of two algorithms for time series averaging in dynamic time warping spaces:
+jdtwMean is a Java implementation of two algorithms for time series averaging in dynamic time warping (DTW) spaces:
 
 * DTW Barycenter Averaging (DBA)
 * Stochastic Subgradient Method (SSG)
