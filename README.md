@@ -22,7 +22,7 @@ Both algorithms are described and discussed in [[1]](#ref1).
 
 ### <a name='start'>Quick Start</a> 
 
-This implementation assumes the file structure and data format of the [UCR time series repository](http://www.cs.ucr.edu/~eamonn/time_series_data/) [2]. The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
+This implementation assumes the file structure and data format of the [UCR time series repository](http://www.cs.ucr.edu/~eamonn/time_series_data/) [[2]](#ref2). The UCR file structure for a dataset with name `<data>` residing in directors `<dir>` is as follows: 
 
 * `dir/data/data_TRAIN`
 * `dir/data/data_TEST`
@@ -46,7 +46,7 @@ The three attributes are set in the same way as the corresponding arguments in t
 
 ### <a name='data'>DATASETS</a>
 
-The folder `*./data/` contains the following datasets of the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) [2]:
+The folder `*./data/` contains the following datasets of the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) [[2]](#ref2):
 
 * CBF
 * Coffee
@@ -108,10 +108,8 @@ Applies the stochastic subgradient method to the Coffee dataset. The algorithm p
 
 
 ### <a name='refs'>References</a> 
-
-If you find this library helpful, please cite it as
-
 <a name='ref1'></a>
 [1] David Schultz and Brijnesh Jain. Nonsmooth Analysis and Stochastic Subgradient Methods for the Sample Mean Problem in Dynamic Time Warping Spaces. *Pattern Recognition*, 74:340-358, 2018. ([arXiv preprint](https://arxiv.org/abs/1701.06393))
 
+<a name='ref2'></a>
 [2] Yanping Chen, Eamonn Keogh, Bing Hu, Nurjahan Begum, Anthony Bagnall, Abdullah Mueen and Gustavo Batista. The UCR Time Series Classification Archive, 2015. URL: www.cs.ucr.edu/~eamonn/time_series_data/.
