@@ -15,11 +15,10 @@ Both algorithms are described and discussed in [1].
 ### Table of Contents 
 
 * [Quick Start](#start)
-* Datasets
-* Options
-* Examples
-* Reference
-* Contact
+* [Datasets](#data)
+* [Options](#opts)
+* [Examples](#examples)
+* [Reference](#refs)
 
 ### <a name='start'>Quick Start</a> 
 
@@ -45,7 +44,7 @@ The `<dir>` and `<data>` arguments are mandatory. Without setting further option
 The three attributes are set in the same way as the corresponding arguments in the command line. Options are set as a single string. For further details on how to set options, we refer to OPTIONS
 
 
-### DATASETS
+### <a name='data'>DATASETS</a>
 
 The folder `*./data/` contains the following datasets of the [UCR time series datasets](http://www.cs.ucr.edu/~eamonn/time_series_data/) provided by E. Keogh:
 
@@ -56,7 +55,7 @@ The folder `*./data/` contains the following datasets of the [UCR time series da
 Each dataset consists of a directory containing a training and a test file dataset. 
 
 
-### OPTIONS#1
+### <a name='opts'>OPTIONS</a>
 
 Setting an option overwrites the corresponding default values. Therefore, only options need to be set that differ from the default. The following options are given:
 
@@ -77,7 +76,7 @@ Setting an option overwrites the corresponding default values. Therefore, only o
 ```
 
 
-### Examples 
+### <a name='examples'>Examples</a> 
 
 In the following examples `<dir>` refers to the directory containing the UCR dataset. 
 
@@ -108,7 +107,7 @@ Applies the DBA algorithm to the Coffee dataset without providing progress infor
 Applies the stochastic subgradient method to the Coffee dataset. The algorithm prematurely terminates after 30 epochs without improvement or latest after 100 epochs. 
 
 
-### References 
+### <a name='refs'>References</a> 
 
 If you find this library helpful, please cite it as
 
@@ -119,10 +118,3 @@ If you use any of the UCR time series datasets provided with this release, pleas
 http://www.cs.ucr.edu/~eamonn/time_series_data/
 
 and agree to the terms of use.
-
-
-### Contact 
-
-For any questions and comments, please email brijnesh.jain(at)gmail.com
-
-
